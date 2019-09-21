@@ -132,6 +132,17 @@
 		  navigationText : ["<img class='svg' src='images/svg/arrow-left-s.svg' onerror='this.src='arrow-left-s.png' alt='Prev' />","<img class='svg' src='images/svg/arrow-right-s.svg' onerror='this.src='arrow-right-s.png'' alt='Next' />"],
 		  pagination: false
 	  });
+	  // OWL CAROUSEL: Occupancy Slide
+	  $(".occupancy-slide").owlCarousel({
+		  autoPlay: false, //Set AutoPlay to 3 seconds
+		  items : 3,
+		  itemsDesktop : [1199,3],
+		  itemsDesktopSmall : [979,3],
+		  itemsMobile : [600,1],
+		  navigation : true, // Show next and prev buttons
+		  navigationText : ["<img class='svg' src='images/svg/arrow-left-s.svg' onerror='this.src='arrow-left-s.png' alt='Prev' />","<img class='svg' src='images/svg/arrow-right-s.svg' onerror='this.src='arrow-right-s.png'' alt='Next' />"],
+		  pagination: false
+	  });
     //
 	  // // Testimonials
 		// $('#testimonial.carousel').carousel({

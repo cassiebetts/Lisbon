@@ -1410,7 +1410,7 @@ header .logo a img {
 \ +=+=+=+=+=+=+=+=+=+=+=+=+=+=+= */
 #contact {
 	position: relative;
-	background-image: url(../images/contact.jpg);
+	/*background-image: url(../images/contact.jpg);*/
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -1443,10 +1443,10 @@ header .logo a img {
 	position: relative;
 }
 footer {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*right: 0;*/
+	/*bottom: 0;*/
 	-webkit-box-shadow: -1px 0 1px 1px rgba(255, 255, 255, 0.2);
 	box-shadow: -1px 0 1px 1px rgba(255, 255, 255, 0.2);
 	padding: 1.5em 0;
@@ -2577,3 +2577,100 @@ header {
 	margin: 0;
 }
 }
+
+
+/*wplayers style*/
+.pt-price{
+	background: #f901ad;
+	display: inline;
+	padding: 1px 4px;
+	color: #fff;
+	font-weight: 300;
+}
+.pricing-table{
+	box-shadow: 0px 0px 9px 0px rgba(249, 1, 173,.1);
+	margin-bottom: 30px;
+	transition: .4s ease-in-out;
+}
+.pricing-table:hover{
+	box-shadow: 0px 0px 9px 0px rgba(249, 1, 173,.6);
+}
+.pricing-table.box-active{
+	box-shadow: 0px 0px 9px 0px rgba(249, 1, 173,.6);
+
+}
+.pricing-table.box-active:hover{
+	box-shadow: 0px 0px 9px 0px rgba(249, 1, 173,.1);
+
+}
+.pricing-table .pt-header{
+	text-align: left;
+	padding: 30px 20px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.pricing-table .pt-header .title{
+	font-weight: 700;
+	margin-top: 0;
+	position: relative;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.pricing-table .pt-header .title::before{
+	content: '';
+	display: block;
+	height: 2px;
+	width: 44px;
+	background: #f901ad;
+	position: absolute;
+	bottom: -3px;
+}
+.pt-footer,.pt-body {
+	background: #ffffff;
+	padding: 20px;
+}
+.pt-body {
+	padding: 30px 20px;
+	border-bottom: 1px solid #ddd;
+}
+.btn-book-now {
+	border: 2px solid #f901ad;
+}
+
+.btn-book-now.active {
+	background-color: #f901ad;
+	color: #FFF;
+	border: 2px solid #f901ad;
+	box-shadow: none;
+}
+.btn-book-now.active:hover {
+	background-color: transparent;
+	color: #f901ad;
+	box-shadow: none;
+}
+
+.pt-two .pt-header {
+	background: #f901ad;
+}
+.pt-two .pt-header .title {
+	color: #fff;
+}
+.pt-two .pt-price {
+	background: #ffffff;
+	color: #f901ad;
+}
+.pt-two .pt-header .title::before {
+	background: #ffffff;
+}
+@media (min-width: 786px) {
+	.occupancy-slide.owl-carousel .item {
+		cursor: auto!important;
+	}
+}
+
+@media (max-width: 600px) {
+	.owl-carousel .item,.pricing-table {
+		box-shadow: none!important;
+	}
+}
+
