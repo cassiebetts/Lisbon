@@ -2667,3 +2667,10 @@ header {
 		cursor: auto!important;
 	}
 }
+
+@media (max-width: 600px) {
+	.owl-carousel .item,.pricing-table {
+		box-shadow: none!important;
+	}
+}
+
