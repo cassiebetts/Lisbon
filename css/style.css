@@ -2183,7 +2183,7 @@ header .logo a img {
 }
 .info-box .container > div {
 	padding: 0;
-	margin: 1em 0;
+	/*margin: 1em 0;*/
 }
 .info-box.option {
 	position: relative;
@@ -2261,16 +2261,16 @@ footer .text-right {
 }
 }
 @media only screen and (min-width: 768px) {
-.subscribe form .btn {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0;
-	z-index: 999;
-	display: block;
-	white-space: normal;
-}
+/*.subscribe form .btn {*/
+/*	position: absolute;*/
+/*	top: 0;*/
+/*	right: 0;*/
+/*	bottom: 0;*/
+/*	margin: 0;*/
+/*	z-index: 999;*/
+/*	display: block;*/
+/*	white-space: normal;*/
+/*}*/
 #success {
 	display: block;
 	margin: 0 auto;
@@ -2581,11 +2581,10 @@ header {
 
 /*wplayers style*/
 .pt-price{
-	background: #f901ad;
-	display: inline;
-	padding: 1px 4px;
-	color: #fff;
-	font-weight: 300;
+    padding: 3px 4px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 .pricing-table{
 	box-shadow: 0px 0px 9px 0px rgba(249, 1, 173,.1);
@@ -2604,7 +2603,6 @@ header {
 
 }
 .pricing-table .pt-header{
-	text-align: left;
 	padding: 30px 20px;
 	border-bottom: 1px solid #ddd;
 	background: #fff;
@@ -2617,13 +2615,16 @@ header {
 	text-transform: capitalize;
 }
 .pricing-table .pt-header .title::before{
-	content: '';
-	display: block;
-	height: 2px;
-	width: 44px;
-	background: #f901ad;
-	position: absolute;
-	bottom: -3px;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 55px;
+    background: #f901ad;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -28px;
+
 }
 .pt-footer,.pt-body {
 	background: #ffffff;
@@ -2655,22 +2656,65 @@ header {
 .pt-two .pt-header .title {
 	color: #fff;
 }
-.pt-two .pt-price {
-	background: #ffffff;
-	color: #f901ad;
-}
+
 .pt-two .pt-header .title::before {
 	background: #ffffff;
 }
+
+.apply-now-box {
+    background: white;
+    height: 116.25px;
+    padding: 20px;
+    border: 2px solid #f901ad;
+}
+.apply-now-box .btn-book-now{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.apply-now-box h6{
+    margin-top: 28px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+
 @media (min-width: 786px) {
 	.occupancy-slide.owl-carousel .item {
 		cursor: auto!important;
 	}
 }
 
+
+@media (max-width: 1025px) {
+    .apply-now-box h6 {
+        margin-left: 0;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .apply-now-box {
+        background: white;
+        height: 98px;
+    }
+    .apply-now-box .btn-book-now {
+        margin-right: 0;
+        margin-top: 7px;
+    }
+}
 @media (max-width: 600px) {
-	.owl-carousel .item,.pricing-table {
-		box-shadow: none!important;
-	}
+    .owl-carousel .item,.pricing-table {
+        box-shadow: none!important;
+    }
+    .apply-now-box {
+        height: 84px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .apply-now-box .btn-book-now {
+        padding: 10px;
+    }
 }
 
